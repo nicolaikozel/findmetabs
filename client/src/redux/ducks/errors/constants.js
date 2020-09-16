@@ -1,0 +1,1 @@
+export const DUCK_NAME = "errors"

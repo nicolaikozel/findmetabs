@@ -1,0 +1,24 @@
+{
+	"author": "Spotify",
+	"name": "web-api-auth-examples",
+	"description": "Basic examples of the Spotify authorization flows through OAuth 2",
+	"version": "0.0.2",
+	"dependencies": {
+		"cookie-parser": "^1.4.5",
+		"cors": "^2.8.4",
+		"eslint": "^6.8.0",
+		"express": "~4.16.0",
+		"querystring": "~0.2.0",
+		"request": "~2.83.0",
+		"spotify-web-api-node": "^4.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.3"
+	},
+	"scripts": {
+		"start": "env NODE_ENV=production node server.js",
+		"deploy": "git checkout master && git push heroku master",
+		"heroku-postbuild": "cd client && yarn && yarn run build",
+		"watch": "env NODE_ENV=development nodemon --ignore 'client/*' server.js"
+	}
+}
