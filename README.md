@@ -1,5 +1,5 @@
 # :books: FindMeTabs
-Live URL: www.findmetabs.com
+Live URL: https://intense-peak-83016.herokuapp.com/
 
 ## Local Dev
 ### Server
